@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Snacks Card</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </style>
+</head>
+<body class="bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <!-- Navbar content -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="foodie.png" alt="Bootstrap" width="100">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Food Items</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Offers & Discounts</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search your item here" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </span>
+              </div>
+            </div>
+      </nav>
+
+
+      <!-- The Cards -->
+      <div class="container">
+        <div class="container-fluid row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 my-3 pb-4 mx-1">
+          <!-- Italian -->
+            <div class="col">
+              <div class="card h-100 shadow bg-body-dark text-light">
+                <img src="pizza.jpg" class="card-img-top shadow" alt="Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza
+                    <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                  </h5>
+                  <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+
+                  <!-- Dropdown -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-sm btn-outline-secondary mb-2 dropdown-toggle" data-bs-toggle="dropdown">
+                      Select Size
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><p class="dropdown-item">Regular</p></li>
+                      <li><p class="dropdown-item">Medium</p></li>
+                      <li><p class="dropdown-item">Large</p></li>
+                    </ul>
+                  </div>
+
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                  <i class="fa-regular fa-heart float-end mt-2"></i>
+                </div>
+                <div class="card-footer border-light">
+                    <img src="rating.png" width="90" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow shadow bg-body-dark text-light">
+                <img src="chizza.jpg" class="card-img-top shadow" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chizza
+                    <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                  </h5>
+                  <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                  <i class="fa-regular fa-heart float-end mt-2"></i>
+                </div>
+                <div class="card-footer border-light">
+                  <img src="rating.png" width="90" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow bg-body-dark text-light">
+                <img src="burger.jpg" class="card-img-top shadow" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Burger
+                    <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                  </h5>
+                  <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                  <i class="fa-regular fa-heart float-end mt-2"></i>
+                </div>
+                <div class="card-footer border-light">
+                  <img src="rating.png" width="90" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="pasta.webp" class="card-img-top shadow" alt="Pizza">
+              <div class="card-body">
+                <h5 class="card-title">Pasta
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <!-- Indo-Korean -->
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="sushi.webp" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sushi
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="smosa.png" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Smosa
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="Fluffy-Dumplings.webp" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fluffy Dumplings
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="Dhokla.jpg" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dhokla
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <!-- Sweets & Drinks -->
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="gulab jamun.jpg" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gulab Jamun
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="choco-pudding.jpg" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Choco Pudding
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="donut.jpg" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Donuts
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow bg-body-dark text-light">
+              <img src="smoothiee.jpg" class="card-img-top shadow" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fresh Smoothie
+                  <span class="fs-6 fw-lighter text-body-secondary float-end"><small>$9</small></span>
+                </h5>
+                <small><p class="card-text mb-3">Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh ...</p></small> 
+                <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-success btn-outline-light btn-sm">Buy Now</button>
+                <i class="fa-regular fa-heart float-end mt-2"></i>
+              </div>
+              <div class="card-footer border-light">
+                <img src="rating.png" width="90" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered rounded modal-dialog-scrollable">
+        <div class="modal-content bg-body-tertiary text-light border" data-bs-theme="dark">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Place order</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body bg-body-dark">
+            <h4>My <span><small class="fs-6">Cart List</small></span></h4> 
+    
+            <!-- Price & details -->
+            <div class="modal-title">
+              <div class="modal-text d-flex justify-content-between border-bottom">
+                <div class="d-flex">
+                  <div class="img-fluid mt-1 mb-4">
+                    <img src="burger2.jpg" alt="" class="rounded-circle img-fluid img-thumbnail" width="50">
+                  </div>
+                  <div class="m-1">
+                    <h5>Burger</h5>
+                    <p>$10.3<small class="text-body-secondary ms-3">x2</small></p>
+                  </div>
+                </div>
+                <div class="d-grid m-2 border border-secondary border-2 rounded">
+                  <button class="btn btn-sm btn-secondary">+</button>
+                  <button class="btn btn-sm btn-dark">-</button>
+                </div>
+              </div>
+
+              <!-- 2nd -->
+              <div class="modal-text d-flex justify-content-between border-bottom">
+                <div class="d-flex">
+                  <div class="img-fluid mt-1 mb-4">
+                    <img src="pizza2.jpg" alt="" class="rounded-circle img-fluid img-thumbnail" width="50">
+                  </div>
+                  <div class="m-1">
+                    <h5>Veg-Pizza</h5>
+                    <p>$20.8<small class="text-body-secondary ms-3">x3</small></p>
+                </div>
+                <div class="btn-group border border-success mb-5 mt-1 rounded-pill shadow" data-bs-theme="dark">
+                  <button class="btn btn-sm shadow rounded-circle btn-active"><small class="fw-lighter">R</small></button>
+                  <button class="btn btn-sm rounded-pill btn-outline-success btn-dark shadow"><small class="fw-lighter">M</small></button>
+                  <button class="btn btn-sm shadow rounded-circle"><small class="fw-lighter">L</small></button> 
+                </div>
+                </div>
+                <div class="d-grid m-2 border border-secondary border-2 rounded">
+                  <button class="btn btn-sm btn-secondary">+</button>
+                  <button class="btn btn-sm btn-dark">-</button>
+                </div>
+              </div>
+
+              <!-- 3rd -->
+              <div class="modal-text d-flex justify-content-between ">
+                <div class="d-flex">
+                  <div class="img-fluid mt-1 mb-4">
+                    <img src="indian-samosas.jpg" alt="" class="rounded-circle img-fluid img-thumbnail" width="50">
+                  </div>
+                  <div class="m-1">
+                    <h5>Smosa</h5>
+                    <p>$12.3<small class="text-body-secondary ms-3">x4</small></p>
+                  </div>
+                </div>
+                <div class="d-grid m-2 border border-secondary border-2 rounded">
+                  <button class="btn btn-sm btn-secondary">+</button>
+                  <button class="btn btn-sm btn-dark">-</button>
+                </div>
+              </div>
+
+              <!-- 4th -->
+              <div class="modal-text d-flex justify-content-between border-top">
+                <div class="d-flex">
+                  <div class="img-fluid mt-1 mb-4">
+                    <img src="gulab jamun2.jpg" alt="" class="rounded-circle img-fluid img-thumbnail" width="50">
+                  </div>
+                  <div class="m-1">
+                    <h5>Gulab Jamun</h5>
+                    <p>$30<small class="text-body-secondary ms-3">x8</small></p>
+                  </div>
+                </div>
+                <div class="d-grid m-2 border border-secondary border-2 rounded">
+                  <button class="btn btn-sm btn-secondary">+</button>
+                  <button class="btn btn-sm btn-dark">-</button>
+                </div>
+              </div>
+
+            </div>
+        
+            <!-- Total -->
+
+            <div class="bg-body-secondary rounded shadow p-2 border">
+              <div class="d-flex justify-content-between text-secondary">
+                <p>Subtotal</p>
+                <small>$ 96.00</small>
+              </div>
+              <div class="d-flex justify-content-between text-secondary">
+                <p>Est.Tax</p>
+                <small>2.00</small>
+              </div>
+              <div class="d-flex justify-content-between text-secondary">
+                <p>Delivery</p>
+                <small>Free</small>
+              </div>
+              <div class="d-flex justify-content-between border-top">
+                <p>Total</p>
+                <small>$ 98.00</small>
+              </div>
+            </div>
+          
+          </div>  
+          
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-around">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Order Now</a> </button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="border-top bg-body-tertiary p-3 d-flex justify-content-around shadow" data-bs-theme="dark">
+      <img src="foodie.png" alt="" class="img-fluid" width="130">
+      <div class="fs-4 mt-2">
+        <i class="fa-brands fa-instagram mx-2"></i>
+        <i class="fa-brands fa-facebook mx-2"></i>
+        <i class="fa-brands fa-twitter mx-2"></i>
+        <i class="fa-brands fa-youtube mx-2"></i>
+        <i class="fa-brands fa-linkedin mx-2"></i>
+      </div>
+    </div>
+     
+</body>
+</html>
